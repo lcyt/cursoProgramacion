@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-#include<stdio.h>
+/*#include<stdio.h>
 
 introducirValores(int a[],char b[][])
 {
@@ -12,6 +12,7 @@ introducirValores(int a[],char b[][])
 
     do
     {
+        char desglose[][];
         int c;
         int i = 0;
         int salir=1;
@@ -43,4 +44,4 @@ introducirValores(int a[],char b[][])
         
     } while (salir==1);
     return 0;
-}
+}*/

@@ -4,20 +4,19 @@
  * and open the template in the editor.
  */
 
-#include<stdio.h>
+//#include<stdio.h>
 
 
 //char desglose[6][16];
 
 
-
-void main()
-{
+//void nomain()
+/*{
     int euros[9]={500,200,100,50,20,10,5,2,1};
     char desglose[6][16];
     
     
     introducirValores(int[] ,char [][]);
     
-    
-}
+    return 0;
+}*/
