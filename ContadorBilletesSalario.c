@@ -11,6 +11,10 @@
 #include<string.h>
 
 
+/*
+DEFINICIÓN DE FUNCIONES
+*/
+
 int comprobarSalario(char entrada[]);   //Definición para la función que comprueba que el salario introducido
                                         //es válido y sólo contiene un máximo de 2 decimales
 
@@ -19,6 +23,11 @@ int comprobarBillete(char billete[]);     //Definición de la función que compr
 
 int redondear(float s, int eu);         //Función para que tome la parte decimla (2 dígitos) correctamente.
                                         //Para ello tenemos que redondear los céntimos
+/*
+FIN DEFINICIÓN DE FUNCIONES
+*/
+
+
 
 int main()
 {
@@ -91,34 +100,21 @@ int main()
     
 }
 
-/*
-Función para redondear los decimales,
-el valor resultante serán solo los dos dígitos correspondientes a los decimales
-*/
 
- int redondear(float s, int eu)
-    {
-       float salario;
-       int redondeado;
-       //printf("%f salario\t %d euros en la función\n",s,eu);
-       salario = (s - eu)*100;
-       //printf("%f\t",salario);
-       salario = round(salario);
-       //printf("%f\t",salario);
-       redondeado = (int)(salario);
-       //printf("%d Comprobacion redondeo\t",redondeado);
-       return redondeado;
-    }
+    /*
+     FUNCIONES
+     */
+
+
  
-
- /*
-  Función para comprbar que el salario introducido es correcto
+  
+ int comprobarSalario(char entrada[])
+  /*
+  Función para comprobar que el salario introducido es correcto
   Comprueba que tenga alguna unidad, que no tenga más de dos puntos
   y que no tenga más de 2 decimales
   */
-  
- int comprobarSalario(char entrada[])
- {
+  {
      
      int punto = 0;
      int numUnidades=0;
@@ -168,11 +164,12 @@ el valor resultante serán solo los dos dígitos correspondientes a los decimale
  }
  
  
+ 
+ 
+ int comprobarBillete(char billete[])
  /*
   Función para comprobar que el billete introducido es correcto
  */
- 
- int comprobarBillete(char billete[])
  {
      int i=0;
      int longitudArray=strlen(billete);
@@ -196,4 +193,25 @@ el valor resultante serán solo los dos dígitos correspondientes a los decimale
          return 0;
      }
  }
+ 
+ 
+
+ int redondear(float s, int eu)
+  /*
+Función para redondear los decimales,
+el valor resultante serán solo los dos dígitos correspondientes a los decimales
+*/
+    {
+       float salario;
+       int redondeado;
+       //printf("%f salario\t %d euros en la función\n",s,eu);
+       salario = (s - eu)*100;
+       //printf("%f\t",salario);
+       salario = round(salario);
+       //printf("%f\t",salario);
+       redondeado = (int)(salario);
+       //printf("%d Comprobacion redondeo\t",redondeado);
+       return redondeado;
+    }
+ 
  
