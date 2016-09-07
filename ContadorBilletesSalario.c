@@ -91,6 +91,11 @@ int main()
     
 }
 
+/*
+Función para redondear los decimales,
+el valor resultante serán solo los dos dígitos correspondientes a los decimales
+*/
+
  int redondear(float s, int eu)
     {
        float salario;
@@ -106,6 +111,12 @@ int main()
     }
  
 
+ /*
+  Función para comprbar que el salario introducido es correcto
+  Comprueba que tenga alguna unidad, que no tenga más de dos puntos
+  y que no tenga más de 2 decimales
+  */
+  
  int comprobarSalario(char entrada[])
  {
      
@@ -155,6 +166,11 @@ int main()
         }    
      }
  }
+ 
+ 
+ /*
+  Función para comprobar que el billete introducido es correcto
+ */
  
  int comprobarBillete(char billete[])
  {
